@@ -52,28 +52,16 @@ UI/样式:
   - ECharts 5 (数据可视化图表)
   - Day.js (时间格式化工具)
 
-## 🚀 快速启动
-
-# 安装依赖
+快速启动
+安装依赖 
+```bash
 npm install
-# 运行项目
+```
+运行项目
+```bash
 npm run dev
+```
 
-## 📸 项目截图
-首页展示
-![alt text](image.png)
-AI咨询
-![alt text](image-1.png)
-情绪日记
-![alt text](image-2.png)
-知识库
-![alt text](image-3.png)
-后台数据分析
-![alt text](image-4.png)
-后台知识文章
-![alt text](image-5.png)
-后台咨询记录
-![alt text](image-6.png)
-后台情绪日志
-![alt text](image-7.png)
+
+
 
