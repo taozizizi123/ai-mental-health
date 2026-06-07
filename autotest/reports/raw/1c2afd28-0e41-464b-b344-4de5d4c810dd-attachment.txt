@@ -1,0 +1,1 @@
+[31m[1mERROR   [0m auto_test:http_request.py:41 接口/user/login请求异常:HTTPConnectionPool(host='127.0.0.1', port=8080): Max retries exceeded with url: /api/user/login (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001CA8199A480>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))

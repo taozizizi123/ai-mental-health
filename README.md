@@ -1,9 +1,4 @@
 # 🧠 AI 心理健康助手 (AI Mental Health Assistant)
-# Vue 3 + Vite
-
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
 
 
 ## 📖 项目简介
@@ -31,6 +26,50 @@ Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://
 | 📞 **会话管理** | 查看咨询会话列表、用户详细信息及会话历史记录 |
 | 🔐 **权限控制** | 基于用户角色（User/Admin）分配不同权限，确保平台数据安全 |
 
+## 自动化测试
+
+基于 pytest + requests 的 API 自动化测试框架
+
+### 安装依赖
+
+```
+快速启动
+安装依赖 
+```bash
+npm install
+```
+运行项目
+```bash
+npm run dev
+```
+
+### 运行测试
+
+```bash
+# 运行所有测试
+pytest
+
+# 运行指定测试文件
+pytest testcases/test_user.py
+
+# 生成 Allure 报告
+pytest --alluredir=./allure-results
+allure serve ./allure-results
+```
+
+### 目录结构
+
+```
+autotest/
+├── api/              # API 接口封装
+├── config/           # 配置文件
+├── core/             # 核心模块（http请求、日志、断言）
+├── testcases/        # 测试用例
+├── testdata/         # 测试数据
+├── conftest.py       # pytest 配置
+├── pytest.ini        # pytest 配置文件
+└── requirements.txt  # 依赖
+```
 
 ## 🛠️ 技术栈
 
@@ -54,16 +93,7 @@ UI/样式:
 
 
 
-```
-快速启动
-安装依赖 
-```bash
-npm install
-```
-运行项目
-```bash
-npm run dev
-```
+
 
 
 
